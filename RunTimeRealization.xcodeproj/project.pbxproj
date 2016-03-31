@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		55F40F2E1CAD1663002FCCDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F40F2D1CAD1663002FCCDD /* main.m */; };
 		55F40F311CAD1663002FCCDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F40F301CAD1663002FCCDD /* AppDelegate.m */; };
-		55F40F341CAD1663002FCCDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F40F331CAD1663002FCCDD /* ViewController.m */; };
 		55F40F371CAD1663002FCCDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F40F351CAD1663002FCCDD /* Main.storyboard */; };
 		55F40F391CAD1663002FCCDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F40F381CAD1663002FCCDD /* Assets.xcassets */; };
 		55F40F3C1CAD1663002FCCDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F40F3A1CAD1663002FCCDD /* LaunchScreen.storyboard */; };
+		55F40F4A1CAD16BF002FCCDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F40F451CAD16BF002FCCDD /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		55F40F2D1CAD1663002FCCDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		55F40F2F1CAD1663002FCCDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55F40F301CAD1663002FCCDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		55F40F321CAD1663002FCCDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		55F40F331CAD1663002FCCDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		55F40F361CAD1663002FCCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55F40F381CAD1663002FCCDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F40F3B1CAD1663002FCCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F40F3D1CAD1663002FCCDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F40F441CAD16BF002FCCDD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		55F40F451CAD16BF002FCCDD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +58,11 @@
 		55F40F2B1CAD1663002FCCDD /* RunTimeRealization */ = {
 			isa = PBXGroup;
 			children = (
-				55F40F2F1CAD1663002FCCDD /* AppDelegate.h */,
-				55F40F301CAD1663002FCCDD /* AppDelegate.m */,
-				55F40F321CAD1663002FCCDD /* ViewController.h */,
-				55F40F331CAD1663002FCCDD /* ViewController.m */,
-				55F40F351CAD1663002FCCDD /* Main.storyboard */,
-				55F40F381CAD1663002FCCDD /* Assets.xcassets */,
-				55F40F3A1CAD1663002FCCDD /* LaunchScreen.storyboard */,
-				55F40F3D1CAD1663002FCCDD /* Info.plist */,
+				55F40F431CAD16BF002FCCDD /* controllers */,
+				55F40F461CAD16BF002FCCDD /* model */,
+				55F40F471CAD16BF002FCCDD /* other */,
+				55F40F481CAD16BF002FCCDD /* utils */,
+				55F40F491CAD16BF002FCCDD /* views */,
 				55F40F2C1CAD1663002FCCDD /* Supporting Files */,
 			);
 			path = RunTimeRealization;
@@ -74,9 +71,52 @@
 		55F40F2C1CAD1663002FCCDD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				55F40F2F1CAD1663002FCCDD /* AppDelegate.h */,
+				55F40F301CAD1663002FCCDD /* AppDelegate.m */,
+				55F40F351CAD1663002FCCDD /* Main.storyboard */,
+				55F40F381CAD1663002FCCDD /* Assets.xcassets */,
+				55F40F3A1CAD1663002FCCDD /* LaunchScreen.storyboard */,
+				55F40F3D1CAD1663002FCCDD /* Info.plist */,
 				55F40F2D1CAD1663002FCCDD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55F40F431CAD16BF002FCCDD /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				55F40F441CAD16BF002FCCDD /* ViewController.h */,
+				55F40F451CAD16BF002FCCDD /* ViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		55F40F461CAD16BF002FCCDD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		55F40F471CAD16BF002FCCDD /* other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		55F40F481CAD16BF002FCCDD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		55F40F491CAD16BF002FCCDD /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F40F341CAD1663002FCCDD /* ViewController.m in Sources */,
 				55F40F311CAD1663002FCCDD /* AppDelegate.m in Sources */,
+				55F40F4A1CAD16BF002FCCDD /* ViewController.m in Sources */,
 				55F40F2E1CAD1663002FCCDD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
